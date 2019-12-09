@@ -1,0 +1,211 @@
+ 
+body {
+background: #fff;  
+margin: 0px;
+padding: 0px;
+
+}
+
+
+#cabezera {
+background: #fff;
+box-shadow:  2px 0px 0px 2px black;
+}
+
+
+
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul > li {
+
+
+	padding: 10px;
+	text-decoration: none;   
+}
+
+
+
+ul > li > a {
+     
+color: #263238;
+font-family:'Open Sans', sans-serif ;
+font-size: 15px;
+padding: 20px;
+
+
+
+}
+
+ul >li > a:hover {
+
+	color: #fff;
+	background: #424242;
+	transition: 100ms;
+
+border-radius: 3px;
+}
+
+
+#registro  {
+
+border: solid 2px black;
+margin: auto;
+color: #000;
+background: #fff;
+
+}
+
+#registro:hover {
+
+	font-weight: bold;
+	color: black;
+}
+
+#registro2  {
+
+border: solid 2px #EC5252;
+margin: auto;
+background: #EC5252;
+color: #FFF;
+}
+
+#registro2:hover {
+
+	background: black;
+	color:#fff;
+	border: solid 2px #000;
+}
+
+
+
+/* CARROUSEL */
+
+
+
+
+
+
+/* CARROUSEL */
+
+.carousel-item {
+
+  height: 500px;
+  min-height: 200px;
+  min-width: auto;
+  object-fit: cover;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.carousel-item:hover {
+
+  height: 500px;
+  min-height: 200px;
+  min-width: auto;
+
+  object-fit: cover;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+.text-carrousel{
+
+font-size: 30px;
+padding: 5px;
+border-style: solid; 
+border-color: #ffF;  background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+.services-section{
+
+background: #fff;
+padding: 30px;
+margin-top: 10px;
+
+
+}
+
+
+
+.servicios {
+
+	
+	padding: 40px;
+/*	margin: 2px; */
+
+
+background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	align-items: center;
+
+
+
+}
+
+
+.servicios:hover{
+background: none;
+
+}
+
+.servicios .icono {
+
+     font-size: 40px;
+     padding: 5px;
+     color: #ff1744;
+	 float: left;
+	 text-align: center;
+	 margin-right: 10px;
+
+}
+
+
+/*
+#iconos{
+
+	padding: 5px;
+	border-radius: 5px;
+}
+*/
+
+.servicios h2 {
+
+font-size: 15px;
+
+color: red;
+vertical-align: top;
+}
+
+
+.servicios p{
+
+
+font-size: 10px;
+
+color: black;
+
+
+}
