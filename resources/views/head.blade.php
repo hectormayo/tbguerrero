@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <script src="https://kit.fontawesome.com/a613d071b5.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!-- End mystyles -->
 

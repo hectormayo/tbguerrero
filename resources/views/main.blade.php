@@ -3,11 +3,8 @@
   <head>
     @include('head'); 
   </head>
-  <body style="padding-top: 105px;"> <!-- Start body -->
-                  
-
-                       
-            
+  <body class="body"> <!-- Start body -->              
+           <div class="header">  <!-- Star header -->
               
                     <nav class="navbar navbar-expand-lg fixed-top   " id="cabezera">
                         
@@ -15,10 +12,7 @@
 
                          <a class="nav-link" href="#" > <img  src="{{ asset('imagenes/logo12.jpg') }}" alt="logo" width="200" height="100" id= "logo"> </a>
 
-                     
-
-            
-
+                    
                             <!-- Modificamos el boton del menu Responsive  -->
                              <button class="navbar-toggler" 
                                   type="button" 
@@ -63,77 +57,85 @@
                  
                       </nav>
 
+
+
+                   </div>  <!--end header -->
+
       
 
-            
-<header>
+       
+
+
+
+    <div class="carrousel">  <!--star carrousel -->
   
+            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 
-  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
 
    
-    <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner" role="listbox">
 
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active"style="background-image: url('{{ asset('imagenes/slider/4.jpg') }}')">
-        <div class="carousel-caption d-none d-md-block">
-       
-          <p class="text-carrousel">This is a description for the first slide.</p>
-        </div>
-      </div>
-
-
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image:  url('{{ asset('imagenes/slider/5.jpg') }}')">
-        <div class="carousel-caption d-none d-md-block">
-     <p class="text-carrousel">This is a description for the first slide.</p>
-        </div>
-      </div>
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"style="background-image: url('{{ asset('imagenes/slider/4.jpg') }}')">
+                  <div class="carousel-caption d-none d-md-block">
+                 
+                    <p class="text-carrousel">This is a description for the first slide.</p>
+                  </div>
+                </div>
 
 
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('{{ asset('imagenes/slider/8.jpg') }}')">
-        <div class="carousel-caption d-none d-md-block">
-            <p class="text-carrousel">This is a description for the first slide.</p>
-        </div>
-      </div>
-    </div>
+                  <!-- Slide Two - Set the background image for this slide in the line below -->
+                  <div class="carousel-item" style="background-image:  url('{{ asset('imagenes/slider/5.jpg') }}')">
+                    <div class="carousel-caption d-none d-md-block">
+                 <p class="text-carrousel">This is a description for the first slide.</p>
+                    </div>
+                  </div>
 
 
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-image: url('{{ asset('imagenes/slider/8.jpg') }}')">
+                      <div class="carousel-caption d-none d-md-block">
+                          <p class="text-carrousel">This is a description for the first slide.</p>
+                      </div>
+                    </div>
+                  </div>
 
 
-</header>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                  </div>
 
-<!-- PAGINAS -->
+
+
+
+       </div>  <!--end carrousel -->
 
 
 
 
 <div class="container">
                  
+                
 
+<!--
 
   <section class="row services-section">
 
 
-                                  <div class="servicios col-lg-3 col-md-6 col-sm-3" >
+                                  <div class="service_one col-lg-3 col-md-6 col-sm-3" >
 
-                                             <div class="icono "><i class="fas fa-ambulance" id="iconos"></i></div>
+                                             <div class="icono"><i class="fas fa-ambulance" ></i></div>
 
 
                                                 <h2>Texto</h2>
@@ -145,7 +147,7 @@
 
 
 
-                                     <div class="servicios col-lg-3 col-md-6 col-sm-3" >
+                                     <div class="service_two col-lg-3 col-md-6 col-sm-3" >
 
                                          <div class="icono "><i class="fas fa-comment-medical"></i></div>
 
@@ -161,7 +163,7 @@
 
 
 
-                                          <div class="servicios col-lg-3 col-md-6 col-sm-3" >
+                                          <div class="service_three col-lg-3 col-md-6 col-sm-3" >
 
                                         
                                               <div class="icono "><i class="fas fa-id-card-alt"></i></div>
@@ -177,7 +179,7 @@
 
 
 
-                                          <div class="servicios col-lg-3 col-md-6 col-sm-3" >
+                                          <div class="service_four col-lg-3 col-md-6 col-sm-3" >
 
                                         
                                               <div class="icono "><i class="fas fa-notes-medical"></i></div>
@@ -192,42 +194,23 @@
 
 
 
-                              </section>
+                              </section>   -->
+
+
+            <section class="row information">
+
+                      
+                      <div class="col-lg-12"> <h1>Sabes como prevenir la tb</h1></div>
+
+  
+            </section>
 
 
 
-                                <section class="row">
-                                  
-                                        <div class="col-lg-4" style="background: red; height: 500px;">
-                                          
-                                    
-                                            
-                                            <p>texto1</p>
-                                             
-
-                                        </div>
+            </div>  <!-- end container -->
 
 
-
-                                        <div class="col-lg-8" style="background: blue; height: 500px;">
-                                          
-                                             <p>texto2</p>
-
-                                        </div>
-
-
-
-
-                                </section>
-
-
-                              </div>  <!-- end container -->
-
-
-                              <!-- FIN DE SECCIONES 2  -->
-
-
-
+                  
    
   </body> <!-- End Body -->
 </html>

@@ -1,11 +1,13 @@
- 
-body {
-background: #fff;  
-margin: 0px;
-padding: 0px;
 
+.body {
+
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0px;
+padding-top: 105px;
 }
-
 
 #cabezera {
 background: #fff;
@@ -91,10 +93,11 @@ color: #FFF;
 
 /* CARROUSEL */
 
-.carousel-item {
+ .carousel-item {
 
-  height: 500px;
-  min-height: 200px;
+  height: 400px;
+  width: auto;
+  min-height: 400px;
   min-width: auto;
   object-fit: cover;
   background: no-repeat center center scroll;
@@ -105,20 +108,6 @@ color: #FFF;
 }
 
 
-
-.carousel-item:hover {
-
-  height: 500px;
-  min-height: 200px;
-  min-width: auto;
-
-  object-fit: cover;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 
 
@@ -129,13 +118,20 @@ color: #FFF;
 font-size: 30px;
 padding: 5px;
 border-style: solid; 
-border-color: #ffF;  background: #c31432;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: relative;
+margin: auto;
+
+
+
+
 }
 
 
 
+/* Section Services 
 
 .services-section{
 
@@ -143,44 +139,81 @@ background: #fff;
 padding: 30px;
 margin-top: 10px;
 
+}
+
+
+
+.services-section .icono {
+
+    font-size: 50px;
+
+    color: #fff;
+   float: left;
+   margin-right: 20px;
 
 }
 
 
 
-.servicios {
+
+.services-section   h2 {
+
+
+font-size: 30px;
+text-align: center;
+color: #fff;
+}
+
+
+.services-section   p {
+
+
+font-size: 15px;
+text-align: justify;
+color: #fff;
+}
+
+
+
+.service_one {
 
 	
-	padding: 40px;
-/*	margin: 2px; */
-
-
-background: #ADA996;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	align-items: center;
-
-
+padding: 40px;
+background: #43A047;
 
 }
 
 
-.servicios:hover{
+
+.service_two{
+
+padding: 40px;
+background: #388E3C;
+}
+
+
+.service_three {
+
+  background: #2E7D32;
+  padding: 40px;
+}
+
+
+.service_four {
+ 
+
+  background: #1B5E20;
+  padding: 40px;
+
+
+}
+
+/*.servicios:hover{
 background: none;
 
-}
+ }  */
 
-.servicios .icono {
 
-     font-size: 40px;
-     padding: 5px;
-     color: #ff1744;
-	 float: left;
-	 text-align: center;
-	 margin-right: 10px;
-
-}
 
 
 /*
@@ -189,15 +222,8 @@ background: none;
 	padding: 5px;
 	border-radius: 5px;
 }
-*/
 
-.servicios h2 {
 
-font-size: 15px;
-
-color: red;
-vertical-align: top;
-}
 
 
 .servicios p{
@@ -208,4 +234,23 @@ font-size: 10px;
 color: black;
 
 
+}
+
+
+ */
+
+
+.information {
+
+  height: 700px;
+  width: auto;
+  background: #ccc;
+}
+
+
+.information  h1 {
+
+text-align:  center;
+color: #fff;
+font-family: 'Source Sans Pro', sans-serif;
 }
